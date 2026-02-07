@@ -1,0 +1,64 @@
+h1 {
+    font-family: cursive;
+    color: #E1CA96;
+}
+a:link\ {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color:purple;
+}
+
+a:hover {
+    color:green;
+}
+
+body {
+    background-color: #ecf5fd;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(71, 71, 71, 1.0);
+    font-size: medium;
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(71, 71, 71, 1.0);
+    font-size: medium;
+
+}
+
+dd {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(71, 71, 71, 1.0);
+    font-size: medium;
+}
+
+dt {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(71, 71, 71, 1.0);
+    font-size: medium;
+}
+
+
+h2 {
+    font-family: cursive;
+    color: #0FA3B1;
+}
+
+h3 {
+    font-family: cursive;
+    color: #0FA3B1;
+}
+
+#fancy_font {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.upper {
+    text-transform: uppercase;
+}
