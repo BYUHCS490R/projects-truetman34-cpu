@@ -1,0 +1,25 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-image: url('brownBack.jpg');
+    background-repeat: repeat;
+    background-color: rgb(109, 58, 58);  */
+    background: url(/activities/firstcss/pics&icons/brownBack.jpg) repeat rgb(117, 52, 52);
+}
+
+.decorative {
+    min-height: 80px;
+    background-image: url(/activities/firstcss/pics&icons/flower.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.flower {
+    width: 200px;
+    height: 20px;
+}
+
+
+.mylist {
+    list-style-type: circle;
+    list-style-image: url(/activities/firstcss/pics&icons/favicon.ico);
+}
