@@ -1,0 +1,58 @@
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #291711;
+
+}
+body {
+    background-color: #A3C4BC;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    color: #291711;
+}
+
+ul.mylist {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #291711;
+}
+
+p {
+    color: #291711;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.repeat {
+    background: url(/projects/phototour/ocean.png) repeat ;
+}
+
+nav {
+    font-size: small;
+}
+a:link {
+    color:blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: brown;
+}
+a.active {
+    color: green;
+}
+
+footer {
+    color: #291711;
+    font-weight: 600;
+}
+
+.mylist {
+    list-style-type: circle;
+    list-style-image: url(/projects/phototour/images.png);
+    font-family: cursive;
+}
+
+.background {
+    background-color: #A3C4BC;
+}
