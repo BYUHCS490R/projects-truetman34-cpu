@@ -49,7 +49,7 @@ footer {
 
 .mylist {
     list-style-type: circle;
-    list-style-image: url(/images.png);
+    list-style-image: url(images.png);
     font-family: cursive;
 }
 
