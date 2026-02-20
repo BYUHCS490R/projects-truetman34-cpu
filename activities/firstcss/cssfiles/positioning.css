@@ -1,0 +1,29 @@
+.wave {
+    width: 100px;
+    overflow: hidden;
+    border: thin solid black;
+}
+
+.floatleft {
+    float: left;
+}
+
+.place {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+}
+
+
+.wave img {
+    width: 100%;
+}
+
+.first {
+    width: 150px;
+}
+
+.clear {
+    clear: both;
+}
