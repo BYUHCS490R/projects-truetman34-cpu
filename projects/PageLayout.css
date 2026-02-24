@@ -1,0 +1,57 @@
+header {
+    
+}
+
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: large;
+    line-height: 30px;
+}
+
+h1 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.wow {
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: 2px 2px 4px cadetblue;
+}
+
+nav a {
+    display: inline-block;
+    background-color: cadetblue;
+    color:white;
+    padding: 5px;
+    border-bottom: thin solid #FFF;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 10px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #FFF;
+    color:plum;
+}
+
+main p {
+    background-color:burlywood;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.repeat {
+    background: url(banana.jpg) repeat;
+}
+
+#wrapper {
+    height: auto;
+    width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    border: thin solid black;
+    box-shadow: 5px 5px blanchedalmond;
+}
