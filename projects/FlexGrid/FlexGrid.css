@@ -1,0 +1,65 @@
+header {
+    background-color: burlywood;
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+}
+
+nav a {
+    display: block;
+    color: chocolate;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color:chocolate;
+}
+
+nav a:visited {
+    color:beige;
+    background-color: brown;
+}
+
+.mainp {
+    display: flex;
+    flex-flow: row;
+}
+
+.mainp main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mainp aside {
+    width: 30%;
+    flex-flow: column;
+    border
+}
+
+.card {
+ width: 175px;
+ box-shadow: 5px 5px grey;
+ margin: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+}
