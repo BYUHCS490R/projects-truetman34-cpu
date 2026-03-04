@@ -79,3 +79,12 @@ header nav a:hover {
     width: 100%;
 
 }
+
+@media ONLY print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    nav {
+        display: none;
+    }
+}
