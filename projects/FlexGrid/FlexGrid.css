@@ -39,7 +39,6 @@ nav a:visited {
 .mainp aside {
     width: 30%;
     flex-flow: column;
-    border
 }
 
 .card {
@@ -62,4 +61,7 @@ footer {
 footer a {
     display: block;
     text-align: center;
+}
+
+
 }

@@ -1,0 +1,91 @@
+header {
+    background-color: burlywood;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(136, 71, 71);
+    border-radius: 5;
+}
+
+nav a {
+    display: block;
+    color: burlywood;
+    text-decoration: none;
+    margin: 3px;
+}
+nav a:hover {
+    color: rgb(136, 71, 71);
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+.dive {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.dive aside {
+    border: thin solid black;
+    height: 100%;
+    width: 200px;
+}
+
+.dive aside figure img {
+    width: 100%;
+}
+
+.dive main h2 {
+    flex-basis: 100%;
+}
+
+.dive main {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    gap: 20px
+    
+}
+
+.card {
+    width: 175px;
+    box-shadow: 5px 5px goldenrod;
+}
+
+.card img{
+    width: 100%;
+}
+
+footer {
+    margin: 10px;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    body {
+        margin-top: 170px;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    .dive main{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .dive aside {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media print {
+    nav {display: none;} 
+}
