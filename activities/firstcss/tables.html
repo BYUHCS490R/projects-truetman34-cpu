@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="cssfiles/tables.css">
+</head>
+<body>
+    <header>
+        <h1>Dining tables</h1>
+    </header>
+    <main>
+        <h2>Class Schedule</h2>
+        <table border="1">
+            <caption>Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Title</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IT 240</td>
+                    <td>Web Design</td>
+                    <td>MWF 12AM</td>
+                    <td>P2</td>
+                    <td rowspan="3">3</td>
+                </tr>
+                <tr>
+                    <td>IT 320</td>
+                    <td>Linux Systems</td>
+                    <td>TT 12AM</td>
+                    <td>P2</td>
+                
+                </tr>
+                <tr>
+                    <td>IT 420</td>
+                    <td>Linux but harder</td>
+                    <td>MWF 12AM</td>
+                    <td>P1</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Fall 2025</th>
+                </tr>
+                <tr>
+                    <td>IT 320</td>
+                    <td>Linux Systems</td>
+                    <td>TT 12AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>IT 420</td>
+                    <td>Linux but harder</td>
+                    <td>MWF 12AM</td>
+                    <td>P1</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="totalcredit">Total Credits:</th>
+                    <td headers="totalcredit">15</td>
+                </tr>
+            </tfoot>
+        </table>
+        <ul>
+            <li>You use a table when organizing information into a easy to read format</li>
+            <li>You might not when your website is for different things, like articles or others.</li>
+            <li>Maybe someone would be blind, so you need to make sure your table works well with a site reader, or someone has shakey hands and you need to make sure they can tab through it easily. Most of this is done automatically but sometimes need adjustment.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; Truman Williams</p>
+    </footer>
+    
+</body>
+</html>
