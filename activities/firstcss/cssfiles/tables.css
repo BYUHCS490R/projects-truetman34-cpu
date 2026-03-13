@@ -1,3 +1,34 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.schedule {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.schedule thead, .schedule tfoot {
+    background-color: blanchedalmond;
+    color:rgb(110, 26, 26);
+}
+
+.schedule td {
+    border-bottom: 1px solid rgb(110, 26, 26);
+}
+
+.schedule tbody tr:nth-of-type(odd) {
+    background-color: aliceblue;
+}
+
+ul::first-letter {
+    font-size: larger;
+    color:red;
+}
+
+/* .schedule th, .schedule td {
+    padding: 3px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+} */
