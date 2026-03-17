@@ -1,0 +1,63 @@
+body {  
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+aside {
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+.flexy {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: ;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color:aliceblue;
+    background-color: coral;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.data {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+.data thead {
+    background-color:coral;   
+}
+
+.data td {
+    border: 1px solid black;
+}
+
+.data tbody {
+    text-align: center;
+}
+
+.data tbody tr:nth-child(1) {
+    background-color: rgb(207, 233, 255);
+    
+}
+
+.data tbody tr:nth-child(2) {
+    background-color: rgba(140, 200, 252, 0.623);
+
+}
+
+.data tbody tr:nth-child(3) {
+    background-color: rgb(67, 151, 224);
+}
