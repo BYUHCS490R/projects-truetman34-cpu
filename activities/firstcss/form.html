@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms study</title>
+    <link rel="stylesheet" href="cssfiles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Forming forms</h1>
+    </header>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+    <main>
+        <form action="formprocs.html" method="post">
+            <div>
+                <label for="fname">Name:</label>
+                <input type="text" name="fullname" id="fname" required value="John">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="name@email.com">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                 <input type="password" name="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank"> ---- </option>
+                    <option value="CA">California</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="TX">Texas</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments">Pre-filled in</textarea>
+            </div>
+            <div>
+                Gender:
+                <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div>
+                <input type="submit" value="Sign up">
+            </div>
+        </form>
+        <ul>
+            <li>
+                Action specifies where the information should go to.
+            </li>
+            <li>
+                Method specifies the way information is sent, whether that be POST or GET
+            </li>
+            <li>
+                GET requests google will do, but not POST. POST causes something to change in a database, sending new information to be updated. GET takes information, more for searching, filtering or sortin stuff.
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div>&copy; 2026 Truman Williams</div>
+    </footer>
+    
+</body>
+</html>l
