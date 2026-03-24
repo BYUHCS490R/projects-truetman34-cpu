@@ -3,8 +3,10 @@ body {
 }
 
 header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:brown;
     color: blanchedalmond;
+    width: 700px;
 }
 
 footer {
@@ -15,6 +17,7 @@ nav {
     display: flex;
     background-color: blanchedalmond;
     justify-content: space-around;
+    width: 550px;
 }
 
 nav a {
@@ -33,7 +36,7 @@ nav a:hover {
 }
 
 fieldset {
-    width: 500px;
+    width: 550px;
 }
 
 legend {
@@ -53,6 +56,7 @@ input:not([type="submit"]), select, textarea {
     border-radius: 5px;
     background-color:lightgoldenrodyellow;
     box-shadow: 1px 1px 3px;
+    padding: 5px;
 
 }
 
