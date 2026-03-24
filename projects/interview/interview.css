@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+main p img {
+    width: 200px;
+}

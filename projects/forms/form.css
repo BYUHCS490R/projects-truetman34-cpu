@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color:brown;
+    color: blanchedalmond;
+}
+
+footer {
+    color: grey;
+}
+
+nav {
+    display: flex;
+    background-color: blanchedalmond;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: brown;
+    justify-content: space-around;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: brown;
+    color: blanchedalmond;
+}
+
+fieldset {
+    width: 500px;
+}
+
+legend {
+    color: blanchedalmond;
+    background-color: brown;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input:not([type="submit"]), select, textarea {
+    border-radius: 5px;
+    background-color:lightgoldenrodyellow;
+    box-shadow: 1px 1px 3px;
+
+}
+
+input[type="submit"] {
+background-color: chocolate;
+border-radius: 3px;
+}
+
+@media  ONLY screen AND (max-width: 500px) {
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: auto;
+    }
+
+    input[type="submit"] {
+        width: 100px;
+        height: 50px;
+        white-space: normal;
+    }
+}
+

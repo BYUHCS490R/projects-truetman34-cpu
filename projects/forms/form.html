@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Project</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Forming forms</h1>
+    </header>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+    <main>
+        <form action="formproc.html" method="post">
+            <fieldset>
+                <legend>Personal information</legend>
+                <div class="form-row">
+                    <label for="fname">Name:</label>
+                    <input type="text" name="fullname" id="fname" placeholder="John Doe">
+                
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="example@gmail.com">
+                
+                    <label for="haircolor">Hair Color</label>
+                    <select name="haircolor" id="haircolor">
+                        <option value="blank">----</option>
+                        <option value="Black">Black</option>
+                        <option value="Blonde">Blonde</option>
+                        <option value="Brunette">Brunette</option>
+                        <option value="Red">Red</option>
+                        <option value="Other">Other</option>
+                    </select>
+               
+                    <div>Gender:</div>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Other Information</legend>
+                    <div class="form-row">
+                        <label for="comments">Comment:</label>
+                        <textarea name="comments" id="comments">HLELLO WOLRD</textarea>
+                    
+                        <label><input type="checkbox" name="agree" value="on" checked>I agree to not agree to this.</label>
+                    
+                        <input type="submit" value="bye bye information">
+                    </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div>&copy; 2026 Truman Williams</div>
+    </footer>
+    
+</body>
+</html>
