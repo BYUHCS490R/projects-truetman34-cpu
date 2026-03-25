@@ -16,7 +16,7 @@
                     <legend>Sign Up</legend>
                 <div class="form-row">
                     <label for="fname">Name:</label>
-                    <input type="text" name="fullname" id="fname" required value="John">
+                    <input type="text" name="fullname" id="fullname" required value="John">
                 </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
@@ -92,7 +92,7 @@
         document.getElementById('myForm').addEventListener('submit',function(event) {
             event.preventDefault();
 
-            const fullname = document.getElementById('fname').value;
+            const fullname = document.getElementById('fullname').value;
             const email = document.getElementById('email').value;
             const password = document.getElementById('pass').value;
             const age = document.getElementById('age').value;
