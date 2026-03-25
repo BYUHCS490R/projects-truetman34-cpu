@@ -10,14 +10,8 @@
     <header>
         <h1>Forming forms</h1>
     </header>
-    <nav>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-    </nav>
     <main>
-        <form action="formprocs.html" method="post">
+        <form action="formprocs.html" method="post" id="myForm">
             <fieldset>
                     <legend>Sign Up</legend>
                 <div class="form-row">
@@ -30,7 +24,11 @@
                 </div>
                 <div class="form-row">
                     <label for="password">Password:</label>
-                    <input type="password" name="pass">
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="text" name="age" id="age">
                 </div>
             <div class="form-row">
                 <label for="state">State:</label>
@@ -59,7 +57,9 @@
                     <input type="submit" value="Sign up">
                 </div>
             </div>
+            </fieldset>
         </form>
+        <h3>Past Engagement</h3>
         <ul>
             <li>
                 Action specifies where the information should go to.
@@ -71,10 +71,50 @@
                 GET requests google will do, but not POST. POST causes something to change in a database, sending new information to be updated. GET takes information, more for searching, filtering or sortin stuff.
             </li>
         </ul>
+        <h3>3/25/2026 Engagement</h3>
+        <ul>
+            <li>
+                JavaScript is a programming language. They wanted it to sound similar to Java to make gains off of it.
+            </li>
+            <li>
+                You can run Javascript in the front end or back end, so on the website or in the database setting.
+            </li>
+            <li>
+                jQuery.js was the most popular front-end js library
+            </li>
+            <li>Today it would be React</li>
+        </ul>
     </main>
     <footer>
         <div>&copy; 2026 Truman Williams</div>
     </footer>
-    
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || !email) {
+                alert("You need a name and email.")
+                return;
+            }
+
+            if (!age || age < 18) {
+                alert("You need to be 18")
+            }
+
+            const formData = {
+                name: fullname,
+                email:  email,
+                password: password,
+                age: age
+            };
+
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>l
