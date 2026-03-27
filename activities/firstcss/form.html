@@ -84,6 +84,11 @@
             </li>
             <li>Today it would be React</li>
         </ul>
+        <h3>3/27/2026
+            <ul>
+                <li>AJAX is asynchornious Javascript and JSON, which sends a request to update in a database the data. This is espeically for forms.</li>
+            </ul>
+        </h3>
     </main>
     <footer>
         <div>&copy; 2026 Truman Williams</div>
@@ -114,6 +119,21 @@
             };
 
             console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true);
+            xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert("Form submitted successfully!");
+                    const response = JSON.parse(xhr.responseText);
+                    console.log(response);
+                    //document.getElementById('myForm').reset();
+                    document.getElementById('myForm').innerHTML = '';
+                    document.getElementById('message').innerText = response.message;
+                } else if (xhr.readyState === 4) {
+                    alert("Error submitting form.");
+                }
+            };
         });
     </script>
 </body>
