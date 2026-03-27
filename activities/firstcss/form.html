@@ -11,6 +11,7 @@
         <h1>Forming forms</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="formprocs.html" method="post" id="myForm">
             <fieldset>
                     <legend>Sign Up</legend>
@@ -87,55 +88,13 @@
         <h3>3/27/2026
             <ul>
                 <li>AJAX is asynchornious Javascript and JSON, which sends a request to update in a database the data. This is espeically for forms.</li>
+                <li>it runs better and its better to only have html in an html file</li>
             </ul>
         </h3>
     </main>
     <footer>
         <div>&copy; 2026 Truman Williams</div>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('pass').value;
-            const age = document.getElementById('age').value;
-
-            if (!fullname || !email) {
-                alert("You need a name and email.")
-                return;
-            }
-
-            if (!age || age < 18) {
-                alert("You need to be 18")
-            }
-
-            const formData = {
-                name: fullname,
-                email:  email,
-                password: password,
-                age: age
-            };
-
-            console.log(formData);
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", "submit.json", true);
-            xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert("Form submitted successfully!");
-                    const response = JSON.parse(xhr.responseText);
-                    console.log(response);
-                    //document.getElementById('myForm').reset();
-                    document.getElementById('myForm').innerHTML = '';
-                    document.getElementById('message').innerText = response.message;
-                } else if (xhr.readyState === 4) {
-                    alert("Error submitting form.");
-                }
-            };
-            xhr.send(JSON.stringify(formData));
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>l
