@@ -17,12 +17,12 @@
         <a href="#">link</a>
     </nav>
     <main>
-        <form action="formproc.html" method="post">
+        <form action="formproc.html" method="post" id="myForm">
             <fieldset>
                 <legend>Personal information</legend>
                 <div class="form-row">
                     <label for="fname">Name:</label>
-                    <input type="text" name="fullname" id="fname" placeholder="John Doe">
+                    <input type="text" name="fname" id="fname" placeholder="John Doe">
                 
                     <label for="email">Email:</label>
                     <input type="text" name="email" id="email" placeholder="example@gmail.com">
@@ -36,10 +36,13 @@
                         <option value="Red">Red</option>
                         <option value="Other">Other</option>
                     </select>
-               
+                 
+                        <label for="age">Age: </label> 
+                        <input type="text" name="age" id="age">
+            
                     <div>Gender:</div>
-                    <label><input type="radio" name="gender" value="male">Male</label>
-                    <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" id="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" id="gender" value="female">Female</label>
                 </div>
             </fieldset>
             <fieldset>
@@ -48,7 +51,7 @@
                         <label for="comments">Comment:</label>
                         <textarea name="comments" id="comments">HLELLO WOLRD</textarea>
                     
-                        <label><input type="checkbox" name="agree" value="on" checked>I agree to not agree to this.</label>
+                        <label><input type="checkbox" name="agree" id="check" value="on" checked>I agree to not agree to this.</label>
                     
                         <input type="submit" value="bye bye information">
                     </div>
@@ -58,6 +61,6 @@
     <footer>
         <div>&copy; 2026 Truman Williams</div>
     </footer>
-    
+    <script src="form.js"></script>
 </body>
 </html>
