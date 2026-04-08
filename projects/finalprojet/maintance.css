@@ -38,7 +38,7 @@ nav a:hover {
     color:purple;
     background-color: beige;
 }
-nav a.active {
+.active {
     background-color: beige;
     color: rgb(121, 54, 121);
 }
