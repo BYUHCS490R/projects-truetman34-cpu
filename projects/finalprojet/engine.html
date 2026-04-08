@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Bay</title>
+    <link rel="stylesheet" href="maintance.css">
+</head>
+<body>
+    <header>
+        <h1>Buying Cars for Dummies</h1>
+    </header>
+    <nav>
+        <a href="homepage.html">Homepage</a>
+        <a href="oil.html">Engine Oil</a>
+        <a href="tread.html">Tire Tread</a>
+        <a href="leaks.html">Car Leaks</a>
+        <a href="maintenance.html">Maintenance Log</a>
+        <a href="engine.html">Form</a>
+    </nav>
+    <main>
+        <form action="formproc.html" method="post" id="myForm" class="formstyle">
+            <fieldset>
+                <legend>Review Form</legend>
+                    <div class="formcard">
+                        <label for="fullname">Name:</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Mr. Bean">
+                    </div>
+                    <div class="formcard">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com">
+                    </div>
+                <div class="formcard">
+                    <div>Did you like our site?</div>
+                    <label><input type="radio" name="review" id="review" value="yes">Yes</label>
+                    <label><input type="radio" name="review" id="review" value="no">No</label>
+                </div>
+                <div class="formcard">
+                    <label for="comments">If so, how come?</label>
+                    <textarea name="comments" id="comments" placeholder="Please type here..."></textarea>
+                </div>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+    <p>&copy; 2026 Truman Williams</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+
+</html>
