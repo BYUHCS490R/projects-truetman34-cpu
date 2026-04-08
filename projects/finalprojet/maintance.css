@@ -58,6 +58,7 @@ nav a:active {
     background-color: beige;
     margin: 5px;
     border-radius: 3px;
+    margin-top: 20px;
 }
 .card h2, h3 {
     background-color: rgb(230, 220, 230);
@@ -67,12 +68,15 @@ nav a:active {
     font-size: 20px;
 }
 
+
 figure img {
+    display: flex;
     width: 100%;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 400px;
     box-shadow: 0 5px 10px rgba(25, 25, 25, 2);
     border-radius: 4px;
+    margin: auto;
 }
 img {
     width: 100%;
@@ -83,6 +87,7 @@ img {
 .data {
     border: 1px solid black;
     margin: 0;
+    margin-top: 10px;
 }
 
 table thead {
@@ -126,6 +131,10 @@ legend {
     border-radius: 5px;
     border: thin solid black;
     padding: 5px;
+}
+
+table {
+    padd
 }
 
 
