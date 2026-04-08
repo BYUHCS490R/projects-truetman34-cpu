@@ -62,7 +62,7 @@ nav a.active, nav a.active:visited {
     border-radius: 3px;
     margin-top: 20px;
 }
-.card h2, h3 {
+.card h2, .card h3 {
     background-color: rgb(230, 220, 230);
     width: 70%;
     margin: 10px;
