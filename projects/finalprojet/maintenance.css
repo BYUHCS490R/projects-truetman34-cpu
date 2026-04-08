@@ -38,7 +38,8 @@ nav a:hover {
     color:purple;
     background-color: beige;
 }
-.active {
+
+nav a.active, nav a.active:visited {
     background-color: beige;
     color: rgb(121, 54, 121);
 }
