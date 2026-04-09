@@ -44,6 +44,8 @@ nav a.active, nav a.active:visited {
     color: rgb(121, 54, 121);
 }
 
+
+
 .column {
     display: flex;
     flex-direction: column;
@@ -51,16 +53,20 @@ nav a.active, nav a.active:visited {
 
 .row {
     display: flex;
+    justify-content: space-around;
 }
 
 .cardfig {
     width: 100%;
 }
+
 .card {
     background-color: beige;
     margin: 5px;
     border-radius: 3px;
     margin-top: 20px;
+    max-width: 500px;
+
 }
 .card h2, .card h3 {
     background-color: rgb(230, 220, 230);
@@ -92,6 +98,11 @@ img {
     margin-top: 10px;
 }
 
+table {
+    width: 800px;
+    height: 200px;
+}
+
 table thead {
     background-color: rgb(230, 220, 230);
 }
@@ -100,7 +111,10 @@ table tbody {
 }
 
 fieldset {
-    max-width: 300px;
+    display: flex;
+    max-width: 1000px;
+    flex-flow: row wrap;
+    max-height: 200px;
 }
 
 legend {
@@ -119,12 +133,9 @@ legend {
     background-color: rgb(230, 220, 230);
 }
 
-.formstyle label, input {
-    margin: 5px;
-}
-
 .formstyle textarea {
-    width: 200px;
+    width: 90%;
+
 }
 
 .formcard {
@@ -135,17 +146,17 @@ legend {
     padding: 5px;
 }
 
-table {
-    padd
-}
+ input {
+        height: 30px;
+    }
 
 
-
-  input[type="submit"] {
+input[type="submit"] {
         width: 100px;
         height: 50px;
         font-size: 20px;
-    }
+        margin: 5px;
+}
 
 @media ONLY screen AND (max-width: 600px) {
     nav {
@@ -165,6 +176,7 @@ table {
 
     figure {
         width: 0 auto;
+        margin: auto;
     }
 
     .card {
@@ -174,7 +186,16 @@ table {
 
     fieldset {
         margin: auto;
+        width: 0px;
+        max-height: 500px;
+        flex-direction: column;
+        align-items: center;
     }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
     .formstyle {
         align-items: center;
@@ -186,5 +207,8 @@ table {
         font-size: 20px;
     }
 
+    table {
+        width: auto;
+    }
 
 }
