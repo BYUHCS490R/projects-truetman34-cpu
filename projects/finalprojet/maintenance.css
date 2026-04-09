@@ -176,8 +176,9 @@ input[type="submit"] {
     }
 
     figure {
-        width: 0 auto;
+        width: auto;
         margin: auto;
+        margin: 5px;
     }
 
     .card {
