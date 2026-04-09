@@ -28,6 +28,7 @@ nav a {
     text-decoration: none;
     color:rgb(212, 203, 189);
     font-size: 20px;
+    margin: 3px;
 }
 nav a:visited {
     background: rgb(121, 54, 121);
