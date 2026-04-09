@@ -3,7 +3,8 @@ event.preventDefault();
 
 const fname = document.getElementById('fullname').value;
 const email = document.getElementById('email').value;
-const review = document.getElementById('review').value;
+const yes= document.getElementById('yes').value;
+const no = document.getElementById('no').value;
 const comment = document.getElementById('comments').value;
 
 if (!fname || !email) {
@@ -11,7 +12,7 @@ if (!fname || !email) {
     return;
 }
 
-if (!review) {
+if (!yes || !no) {
     alert("You need check yes or no")
     return;
 }
@@ -24,7 +25,8 @@ if (!comment) {
 const formData = {
     name: fname,
     email:  email,
-    review: review,
+    yes: yes,
+    no: no,
     comments: comment
 };
 
